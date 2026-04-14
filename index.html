@@ -17,6 +17,18 @@
 
 ```
 <style>
+  html,
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0%;
+  }
+
   :root {
     --black: #0a0a0a;
     --dark: #111111;
@@ -1401,6 +1413,123 @@
     .modal-body {
       padding-left: 1.5rem;
       padding-right: 1.5rem;
+    }
+  }
+
+  /* =========================
+   MOBILE RESPONSIVENESS FIX
+   ========================= */
+
+
+  @media (max-width: 768px) {
+
+
+    /* prevent horizontal overflow issues */
+    body {
+      overflow-x: hidden;
+    }
+
+
+    /* fix global padding */
+    section {
+      padding: 3rem 1rem !important;
+    }
+
+
+    /* NAV */
+    nav {
+      padding: 1rem 1rem;
+    }
+
+
+    .nav-links {
+      display: none;
+      /* later you can replace with hamburger menu */
+    }
+
+
+    /* HERO */
+    .hero {
+      padding: 6rem 1rem 3rem;
+      text-align: center;
+    }
+
+
+    .hero h1 {
+      font-size: clamp(2.5rem, 10vw, 4rem);
+    }
+
+
+    .hero-sub {
+      margin: 0 auto;
+      font-size: 1rem;
+    }
+
+
+    .hero-buttons {
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
+
+
+    .hero-buttons a {
+      width: 100%;
+      max-width: 280px;
+      text-align: center;
+    }
+
+
+    .hero-badge {
+      display: none;
+      /* stops overflow issue */
+    }
+
+
+    /* GRID FIXES */
+    #about,
+    .contact-grid,
+    .form-row,
+    .modal-form-row {
+      grid-template-columns: 1fr !important;
+    }
+
+
+    /* SERVICES */
+    .services-grid {
+      grid-template-columns: 1fr !important;
+    }
+
+
+    /* GALLERY */
+    .gallery-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+
+
+    /* TEXT scaling */
+    .section-title {
+      font-size: 2.2rem;
+    }
+
+
+    /* FOOTER */
+    footer {
+      flex-direction: column;
+      text-align: center;
+    }
+
+
+    .footer-social {
+      justify-content: center;
+    }
+
+
+    /* IMAGES */
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
     }
   }
 </style>
