@@ -929,6 +929,100 @@
     padding: 4rem 2rem;
   }
 
+  @media (max-width: 768px) {
+
+
+    /* GENERAL SPACING */
+    section {
+      padding: 4rem 1.2rem;
+    }
+
+
+    /* NAV */
+    nav {
+      padding: 1rem 1.2rem;
+    }
+
+
+    .nav-links {
+      display: none;
+      /* optional: replace with hamburger later */
+    }
+
+
+    /* HERO */
+    .hero {
+      padding: 0 1.2rem;
+      text-align: center;
+    }
+
+
+    .hero h1 {
+      font-size: clamp(2.8rem, 10vw, 4.5rem);
+    }
+
+
+    .hero-sub {
+      margin: 0 auto 2rem auto;
+    }
+
+
+    .hero-buttons {
+      justify-content: center;
+    }
+
+
+    .hero-badge {
+      display: none;
+      /* prevents overlap on small screens */
+    }
+
+
+    /* ABOUT */
+    #about {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+
+
+    /* SERVICES */
+    .services-header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+
+    /* CONTACT */
+    .contact-grid {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+
+
+    /* FORMS */
+    .form-row {
+      grid-template-columns: 1fr;
+    }
+
+
+    /* FOOTER */
+    footer {
+      flex-direction: column;
+      text-align: center;
+    }
+
+
+    /* REMOVE HORIZONTAL SCROLL ISSUES */
+    body {
+      overflow-x: hidden;
+    }
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
   /* MAP */
   .map-wrap {
     height: 400px;
@@ -1338,7 +1432,7 @@
     <div class="hero-lines"></div>
     <div class="hero-content">
       <div class="hero-tag">Est. 2018 · Premium Haircare</div>
-      <h1>Healthy<br /><span class="gold">Crowns.</span><br />Intentional<br />Care.</h1>
+      <h1>Healthy<br /><span class="gold">Crowns.</span><br />Expert<br />Care.</h1>
       <p class="hero-sub">Where beauty meet intention. Walk in one way, walk out looking renewed.</p>
       <div class="hero-buttons">
         <a href="https://booksy.com/en-us/1692146_akashas-crown-therapy_hair-salon_134610_fort-worth?do=invite#ba_s=dl_1"
